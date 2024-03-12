@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="tema.css" />
+        <title>Cotizador</title>
+
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script src="cotizador.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="header">
+                <h1>
+                    Cotización de seguro de auto
+                </h1>
+            </div>
+
+            <div id="content">
+                <!-- CONTENIDO DE LA APLICACIÓN  -->
+                <form>
+                    <fieldset><legend>Datos del vehículo</legend>
+			            <h3>Tipo</h3>
+
+                        <div class="group">
+                            <select>
+                                <option></option>
+                                <option>Auto y SUV</option>
+                                <option>Pickup</option>
+                            </select>
+                        </div>
+
+                        <h3>Año, marca y modelo</h3>
+                        <table>
+                            <tr>
+                                <td>Año</td>
+                                <td>Marca</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option value=''>Seleccione</option>
+                                        <option value='2022'>2022</option>
+                                        <option value='2021'>2021</option>
+                                        <option value='2020'>2020</option>
+                                        <option value='2019'>2019</option>
+                                        <option value='2018'>2018</option>
+                                        <option value='2017'>2017</option>
+                                        <option value='2016'>2016</option>
+                                        <option value='2015'>2015</option>
+                                        <option value='2014'>2014</option>
+                                        <option value='2013'>2013</option>
+                                        <option value='2012'>2012</option>
+                                        <option value='2011'>2011</option>
+                                        <option value='2010'>2010</option>
+                                        <option value='2009'>2009</option>
+                                        <option value='2008'>2008</option>
+                                        <option value='2007'>2007</option>
+                                        <option value='2006'>2006</option>
+                                        <option value='2005'>2005</option>
+                                        <option value='2004'>2004</option>
+                                        <option value='2003'>2003</option>
+                                        <option value='2002'>2002</option>
+                                        <option value='2001'>2001</option>
+                                        <option value='2000'>2000</option>
+                                        <option value='1999'>1999</option>
+                                        <option value='1998'>1998</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option value=''>Marca</option>
+                                        <option value='Audi'>Audi</option>
+                                        <option value='BMW'>BMW</option>
+                                        <option value='Buick'>Buick</option>
+                                        <option value='Chevrolet'>Chevrolet</option>
+                                        <option value='Chrysler'>Chrysler</option>
+                                        <option value='Dodge'>Dodge</option>
+                                        <option value='FIAT'>FIAT</option>
+                                        <option value='Ford'>Ford</option>
+                                        <option value='GMC'>GMC</option>
+                                        <option value='Honda'>Honda</option>
+                                        <option value='Hummer'>Hummer</option>
+                                        <option value='Infiniti'>Infiniti</option>
+                                        <option value='Jeep'>Jeep</option>
+                                        <option value='Land Rover'>Land Rover</option>
+                                        <option value='Lincoln'>Lincoln</option>
+                                        <option value='Mazda'>Mazda</option>
+                                        <option value='Mercedes-Benz'>Mercedes-Benz</option>
+                                        <option value='Mercury'>Mercury</option>
+                                        <option value='Mini'>Mini</option>
+                                        <option value='Mitsubishi'>Mitsubishi</option>
+                                        <option value='Nissan'>Nissan</option>
+                                        <option value='Oldsmobile'>Oldsmobile</option>
+                                        <option value='Peugeot'>Peugeot</option>
+                                        <option value='Pontiac'>Pontiac</option>
+                                        <option value='RAM'>RAM</option>
+                                        <option value='Renault'>Renault</option>
+                                        <option value='Seat'>Seat</option>
+                                        <option value='Smart'>Smart</option>
+                                        <option value='Subaru'>Subaru</option>
+                                        <option value='Suzuki'>Suzuki</option>
+                                        <option value='Toyota'>Toyota</option>
+                                        <option value='Volkswagen'>Volkswagen</option>
+                                        <option value='Volvo'>Volvo</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                </fieldset>
+
+    			<fieldset><legend>Datos del conductor</legend>
+                    <h3>Sexo</h3>
+                    <div class="group">
+                        <select>
+                            <option></option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                        </select>
+                    </div>
+
+                    <h3>Fecha de nacimiento</h3>
+                    <div class="group">
+                        <input type="date">
+                    </div>
+
+                    <h3>Estado de residencia</h3>
+                    <select>
+                        <option value=''>Estado</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Ciudad de México">Ciudad de México</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Estado de México">Estado de México</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                <legend>Coberturas</legend>
+                <table class="cotizador">
+                    <tr>
+                      <td class="c1">
+                          <h3>Asistencia Legal</h3>
+                          En caso de ser necesario se le asignará un abodago para defensa legal y el pago de cauciones y/o fianzas.</td>
+                      <td>
+                        <select>
+                            <option>No agregar</option>
+                            <option>Sí agregar</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <h3>Deducible en caso de robo</h3>
+                          Cubre el robo total de tu vehículo y pérdidas o daños materiales que sufra a consecuencia del robo</td>
+                      <td>
+                          <select>
+                              <option>No agregar</option>
+                              <option>5%</option>
+                              <option>10%</option>
+                              <option>15%</option>
+                              <option>20%</option>
+                              <option>25%</option>
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <h3>Responsabilidad civil</h3>
+                          Cubre los daños que puedas ocasionar a terceras personas en sus bienes.</td>
+                      <td><select>
+                          <option value="0">No agregar</option>
+                          <option>500,000</option>
+                          <option>1,000,000</option>
+                          <option>1,500,000</option>
+                          <option>2,000,000</option>
+                          <option>2,500,000</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <h3>Gastos médicos</h3>
+                          Ampara los servicios médicos para ti y los acompañantes en un accidente.</td>
+                      <td><select>
+                          <option value="0">No agregar</option>
+                          <option>500,000</option>
+                          <option>1,000,000</option>
+                          <option>1,500,000</option>
+                          <option>2,000,000</option>
+                          <option>2,500,000</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <h3>Auxilio vial</h3>
+                          Servicio de asistencia en cualquier camino o carretera.</td>
+                      <td>
+                          <select>
+                              <option>No agregar</option>
+                              <option>Sí agregar</option>
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <h3>Auto sustituto</h3>
+                          En caso de estar disponible tu carro, se te otorga otro de manera temporal.</td>
+                      <td>
+                          <select>
+                              <option>No agregar</option>
+                              <option>Sí agregar</option>
+                          </select>
+                      </td>
+                    </tr>
+                </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Servicios adicionales</legend>
+                    <table class="cotizador">
+                        <tr>
+                            <td class="c1">
+                            <h3>Garantía de 30 minutos</h3>
+                            Si el agente ajustador no llega en 30 minutos a partir de la hora de alta de tu reporte, no pagas el deducible.
+                            </td>
+                        <td>
+                            <select>
+                                <option>No agregar</option>
+                                <option>Sí agregar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Cerrajero</h3>
+                            Para esos casos en que se te olvidan las llaves dentro del vehículo cerrado. Hasta dos eventos al año.</td>
+                        <td>
+                            <select>
+                                <option>No agregar</option>
+                                <option>Sí agregar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Cambio de cristales</h3>
+                            Cambio de todos los cristales de tu vehículo pagando el 20% del costo. Hasta un evento al año.</td>
+                        <td>
+                            <select>
+                                <option>No agregar</option>
+                                <option>Sí agregar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Cambio de acumulador</h3>
+                            Cambio del acumulador de tu vehículo pagando el 20% de su costo. Hasta un evento al año.</td>
+                        <td>
+                            <select>
+                                <option>No agregar</option>
+                                <option>Sí agregar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </table>
+                </fieldset>
+                <fieldset><legend>Pago en línea</legend>
+                    <table class="cotizador">
+                    <tr>
+                      <td class="c1">
+		                     <h3>Forma de pago</h3>
+	                       Paga ahora con tu tarjeta de crédito o débito Visa o Mastercard
+                      </td>
+                      <td>
+                        <div class="group">
+                            <select>
+                                <option>Pago anual</option>
+                                <option>Pago semestral</option>
+                                <option>Pago trimestral</option>
+                                <option>Pago mensual</option>
+                            </select>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <button type="button" class="boton-1" onClick="mostrarResumen()">Cotizar</button>
+          </form>
+        </div>
+            <div id="footer">
+                <h2>Cotización de seguro de auto</h2>
+                <p>Copyright © App name, 2022</p>
+            </div>
+
+			<div id="confirmacion" title="Resumen de tu seguro" class="ui-helper-hidden">
+                <p>Revisa la información que se presenta a continuación:</p>
+				<table class="resumen">
+                    <tr>
+                        <td class="c1">
+                            <h3>Edad del contratante</h3>
+                        </td>
+                        <td class="c2"><input type="text" class="resumen" readonly></td>
+                    </tr>
+					<tr>
+						<td class="c1">
+							<h3>Costo anual</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+                </table>
+                <table class="resumen" border="1">
+					<tr>
+						<td class="c1">
+							<h3>Asistencia Legal</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Deducible en caso de robo</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Responsabilidad civil</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Gastos médicos</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Auxilio vial</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Auto sustituto</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
+					</tr>
+                </table>
+                <table class="resumen" border="1">
+                    <tr>
+                        <td class="c1">
+                            <h3>Servicios adicionales</h3>
+                            <input type="text" class="resumen-largo" readonly/>
+                        </td>
+                    </tr>
+                </table>
+                <table class="resumen" border="1">
+                    <tr>
+						<td class="c1" valign="top">
+							<h3>Forma de pago</h3>
+
+                            <input type="text" class="resumen-largo" readonly>
+						</td>
+					</tr>
+				</table>
+                <p>
+                    <button type="button" class="boton-1">¡Contratar ahora!</button>
+                </p>
+			</div>
+        </div>
+    </body>
+</html>

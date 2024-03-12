@@ -1,0 +1,292 @@
+body {
+	margin:0;
+	padding:0;	
+	color:#444444;
+	background-color: #eaeaea;
+}
+
+body *{ 
+	font-family:"Verdana", Geneva, Arial, Helvetica, sans-serif;	
+	font-size: 16px;
+}
+
+/*quitar los border a la imágenes cuanto son hipervínculos*/
+img{ border:0; }
+
+/*Texto alineado a la derecha*/
+.right{ text-align:right; }
+
+/*Texto alineación justificada*/
+.justify{ text-align:justify; }
+
+/*Texto alineado al centro*/
+.center{ text-align:center; }
+
+h1{	font-size: 2.0em; }
+h2{	font-size: 1.5em; }
+h3{
+	color:#f8a12b;
+}
+
+/*Contenedor principal*/
+#container {
+	margin: 0 auto;
+	max-width: 950px;
+	background:#ffffff;
+}
+/*********************************/
+/*Encabezado*/
+#header {
+	background: #f8a12b; /* Old browsers */	
+
+	padding: 20px;
+	height:60px;
+	color:#ffffff;	
+}
+
+#header h1 { 
+	margin: 0;
+	font-weight:300;	  
+}
+/*********************************/
+/*Menú*/
+#navigation {
+	float: left;
+	width: 100%;
+	background:#004785;
+}
+
+#navigation ul {	
+	margin: 0;
+	padding: 0;
+	list-style-type: none;	
+}
+
+#navigation ul li {	display: inline; }
+
+#navigation li a {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color:#fff;
+	text-decoration: none;	
+}
+
+#navigation li a:hover { background:#004785; }
+/*********************************/
+/*Contenido*/
+#content {
+	clear: left;
+	padding: 20px;
+}
+
+#content a { color:#004785; }
+
+#content h1 {		
+	padding-bottom: 10px;	
+}
+
+#content h1, #content h2 {
+	color:#004785;
+	margin: 0 0 1em 0;	
+}
+/*********************************/
+/*Pie*/
+#footer {
+	background:#004785;
+	text-align: right;
+	padding: 15px;
+	height: 100px;
+	color:#FFFFFF;
+}
+
+#footer p { float:right; }
+
+#footer h2 { margin:0; }
+
+#footer ul {
+	float:left;
+	list-style-type: none;
+	text-align:left;
+	margin: 0 0 10px 0;		
+	padding:0;	
+}
+
+#footer ul li a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#footer ul li a:hover {	text-decoration:underline; }
+
+#footer .visitanos {
+	margin-bottom: 10px;
+	font-size:0.90em;
+}
+
+.cotizador{
+	width:100%;
+}
+
+.cotizador .c1{
+	width:70%;
+}
+
+/*********************************/
+/* Formulario */
+form{ padding: 0px 10px 10px 15px; }
+
+button{	
+	background-color: #004785;
+	border:0px;
+	color:#FFFFFF;
+	padding: 8px 16px 8px 16px;
+	text-decoration:none;
+	cursor:pointer;
+	border-radius: 8px 8px 8px 8px;
+}
+
+button:hover{ background-color: #004785; }
+
+button.boton-1{	
+	background-color: #004785; 
+	display:block;
+	margin: 0 auto;
+	width:400px;
+}
+
+fieldset {
+	border:1px solid #eaeaea;
+	padding: 15px 15px 10px 10px;
+	margin-bottom: 50px;		
+}
+
+legend {
+	font-size:1.2em;
+	font-weight:bold;
+	color:#004785;
+}
+
+label {
+	font-size: 1.0em;	
+	margin: 15px 0 1px;	
+	color:#004785;
+	display:block;				
+}
+
+label.chk input {
+	display:inline;
+	border:0px;	
+}
+
+textarea, select, input {
+	padding: 7px 5px;	
+	outline-color: #004785;	
+	border:1px solid #cccccc;
+	box-sizing:border-box;
+	color:#000000;	
+	display:block;
+}
+
+.horizontal textarea, .horizontal select, .horizontal input, .horizontal label{
+	display:inline;
+}
+
+.aligned{width:700px;}
+
+.aligned label{
+	width: 25%;
+	text-align: right;		
+}
+
+.aligned label, 
+.aligned input, 
+.aligned select, 
+.aligned textarea{
+	display:inline-block;
+}
+
+.aligned .chk{
+	display:block;
+	margin-left:25%;
+	text-align:left;	
+}
+
+.aligned button{	
+	margin: 0 auto;	
+}
+/*********************************/
+/*Tablas*/
+table {	
+	border-collapse: collapse; /*elimina la separación  entre celdas*/
+	margin-bottom: 10px;	
+}
+
+table thead {
+	font-weight:bold;
+	text-align:center;
+	color: #ffffff;
+	background-color:#004785;
+}
+
+table th, table td {	 
+	padding: 5px 10px;		
+}
+
+table tfoot td {
+	text-align:right;
+	background-color: #eaeaea;
+	font-weight:bold;
+}
+.edad, .porcentaje{
+	width:80px;
+}
+
+.resumen{
+	width:100%;
+}
+.resumen .c1{
+	width: 80%;
+}
+
+.resumen .c1 p{
+	font-size:0.85em;
+}
+
+.resumen td{
+	border: 1px solid #eaeaea;
+}
+
+input.resumen{
+	width: 100px;
+}
+
+input.resumen-largo{
+	width: 545px;
+	margin-bottom: 15px;
+}
+
+.resumen ul{
+	margin: 0 0 0 5px;
+	padding:0;
+}
+
+.resumen ul li{
+	font-size: 0.85em;
+}
+
+#texto-errores{
+	background-color: #fef1ec;
+	color:#cd0a0a;
+	border:1px solid #cd0a0a;
+	padding:45px;
+	margin:15px;
+}
+
+.chk-confirma input{
+	margin: 0 auto 10px auto;	
+}
+.chk-confirma{
+	text-align:center;
+	margin-bottom: 40px;
+}
