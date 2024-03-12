@@ -53,7 +53,7 @@ Para determinar el costo total del seguro considerar el siguiente procedimiento:
    3. Los servicios adicionales agregados deberán aparecer en `.resumen-largo` separados por comas.
    4. La forma de pago deberá mostrarse en `.resumen-largo`.
 5. Se utilizaron correctamente los selectores y estilos indicados (1 punto):
-   1. div (selector por ID)
+   1. div identificador _header_ (selector por ID)
    ```css      
       background: #f8a12b; 
       padding: 20px;
