@@ -72,8 +72,7 @@ Para determinar el costo total del seguro considerar el siguiente procedimiento:
    ```css
       color: #f8a12b;      
    ```
-6. Se configuró correctamente un formulario en el resumen del seguro, el cual al dar clic sobre el botón con texto "¡Contratar ahora!" manda todos los datos con la clase `"resumen"` y `"resumen-largo"` a la url https://servicios.ver.ucc.mx/procesar.php (1 punto)
-
+6. Se configuró correctamente un formulario en el resumen del seguro, el cual al dar clic sobre el botón con texto "¡Contratar ahora!" manda todos los campos con las clases `"resumen"` y `"resumen-largo"` a la url https://servicios.ver.ucc.mx/procesar.php (1 punto)
 	
 ## Tabla marcas
 
