@@ -1,6 +1,6 @@
-# Examen parcial 2022a
+# Examen parcial 2024a
 
-Ejercicio. Un banco nacional importante necesita de una aplicación Web que permita a clientes potenciales cotizar seguro de automóvil. Para la cotización es necesario recopilar información del vehículo, cliente y servicios a contratar. Dicha información se categoriza de la siguiente manera:
+Instrucciones. Un banco nacional importante necesita de una aplicación Web que permita a clientes potenciales cotizar seguro de automóvil. Para la cotización es necesario recopilar información del vehículo, cliente y servicios a contratar. Dicha información se categoriza de la siguiente manera:
 
 * Información del vehículo
   * Se solicita al usuario el año, marca y modelo del vehículo a asegurar
@@ -44,7 +44,7 @@ Para determinar el costo total del seguro considerar el siguiente procedimiento:
     4. Mensual aumenta 7%.
 
 ## Criterios:
-1. La aplicación calcula correctamente (utiliza el archivo cotizador.xlsx) el costo anual del seguro de auto según el procedimiento antes descrito. (5 puntos)
+1. La aplicación calcula correctamente (utiliza el archivo cotizador.xlsx) el costo anual del seguro de auto según el procedimiento antes descrito. (3 puntos)
 2. La aplicación debe validar que el usuario ha establecido valor en todos los campos de las secciones “Datos del vehículo” y “Datos del conductor” antes de realizar una cotización. En caso de un dato faltante, informar con un mensaje de error (usa window.alert). (1 punto)
 3. El dato "Edad del contratante" del “Resumen de tu seguro” se calcula correctamente considerando **mes** y **año** de la fecha seleccionada (asume que todos los años tienen la misma cantidad de días). (1 punto)
 4. En la sección “Resumen de tu seguro” se muestran correctamente todas las opciones seleccionadas por el usuario en el formulario de la cotización de la siguiente manera (3 puntos):
@@ -52,6 +52,28 @@ Para determinar el costo total del seguro considerar el siguiente procedimiento:
    2. Las coberturas con importes de dinero y porcentajes se muestra la cantidad, en caso de no considerarlo deberá aparecer la leyenda “No agregado”.
    3. Los servicios adicionales agregados deberán aparecer en `.resumen-largo` separados por comas.
    4. La forma de pago deberá mostrarse en `.resumen-largo`.
+5. Se utilizaron correctamente los selectores y estilos indicados (1 punto):
+   1. div (selector por ID)
+   ```css      
+      background: #f8a12b; 
+      padding: 20px;
+      height: 60px;
+      color: #ffffff;
+      margin: 0;
+      font-weight: 300;
+   ```
+   2. legend (selector por tipo de elemento)
+   ```css
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #004785;
+   ```
+   3. h3 (selector por clase)
+   ```css
+      color: #f8a12b;      
+   ```
+6. Se configuró correctamente un formulario en el resumen del seguro, el cual al dar clic sobre el botón con texto "¡Contratar ahora!" manda todos los datos con la clase `"resumen"` y `"resumen-largo"` a la url https://servicios.ver.ucc.mx/procesar.php (1 punto)
+
 	
 ## Tabla marcas
 

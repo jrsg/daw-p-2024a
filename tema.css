@@ -24,9 +24,6 @@ img{ border:0; }
 
 h1{	font-size: 2.0em; }
 h2{	font-size: 1.5em; }
-h3{
-	color:#f8a12b;
-}
 
 /*Contenedor principal*/
 #container {
@@ -34,21 +31,7 @@ h3{
 	max-width: 950px;
 	background:#ffffff;
 }
-/*********************************/
-/*Encabezado*/
-#header {
-	background: #f8a12b; /* Old browsers */	
 
-	padding: 20px;
-	height:60px;
-	color:#ffffff;	
-}
-
-#header h1 { 
-	margin: 0;
-	font-weight:300;	  
-}
-/*********************************/
 /*Menú*/
 #navigation {
 	float: left;
@@ -159,24 +142,6 @@ fieldset {
 	border:1px solid #eaeaea;
 	padding: 15px 15px 10px 10px;
 	margin-bottom: 50px;		
-}
-
-legend {
-	font-size:1.2em;
-	font-weight:bold;
-	color:#004785;
-}
-
-label {
-	font-size: 1.0em;	
-	margin: 15px 0 1px;	
-	color:#004785;
-	display:block;				
-}
-
-label.chk input {
-	display:inline;
-	border:0px;	
 }
 
 textarea, select, input {
@@ -290,3 +255,30 @@ input.resumen-largo{
 	text-align:center;
 	margin-bottom: 40px;
 }
+
+/*********************************/
+/* por ID */
+
+
+
+
+
+/*********************************/
+
+/*********************************/
+/* por tipo */
+
+
+
+
+
+/*********************************/
+
+/*********************************/
+/* por clase */
+
+
+
+
+
+/*********************************/
